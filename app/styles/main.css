@@ -24,19 +24,19 @@ body {
     50px 50px;
 }
 
-footer {
+.page-footer {
     background: url(../images/dancing-potatoes.png) repeat-x 50% 0;
     padding-top: 100px;
 }
 
-footer p {
+.page-footer p {
     padding-top: 20px;
 }
 
-footer .btn-link {
+.page-footer .btn-link {
     color: #777;
 }
 
-footer .btn-link:hover {
+.page-footer .btn-link:hover {
     color: #999;
 }

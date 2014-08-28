@@ -27,6 +27,10 @@
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+    <div ng-app="hutchhouseApp" class="container">
+        <div ng-view=""></div>
+    </div>
+
     <footer class="page-footer text-center">
         <p class="text-muted">&copy; Copyright Hutchhouse Ltd 2014</p>
         <a href="#" class="btn btn-link" role="button">Terms &amp; Conditions</a>
@@ -48,6 +52,11 @@
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

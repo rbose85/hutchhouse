@@ -83,8 +83,7 @@ body * {
     margin: 0;
     font-size: 3.85em;
 }
-@media(max-width:767px){}
-@media(min-width:768px){}
+
 @media (min-width: 992px) {
     .intro-title {
         padding: 0;
@@ -198,6 +197,16 @@ body * {
     font-weight: 400;
     font-size: 1.25em;
     margin-top: 0;
+}
+
+.form-group .help-block {
+    display: none;
+}
+
+.form-group.has-error .help-block {
+    display: block;
+    font-weight: 300;
+    color: #c5001d;
 }
 
 input::-webkit-input-placeholder {

@@ -1,1 +1,74 @@
-<h1>Hello, {{name}}!</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 col-md-push-1 background"></div>
+        <div class="col-md-3 col-md-offset-7">
+            <div class="logo text-right">
+                <a href="http://www.hutchhouse.com" title="Hutchhouse">
+                    <img src="images/logo.png" alt="Hutchhouse Ltd - A full service web and mobile agency." class="site-logo"/>
+                    <h4>Digital User Experience Team</h4>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4 col-md-offset-2">
+            <h2 class="intro-title">Get in touch</h2>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+            <p class="intro-blurb">We always like to hear from people. If you have a message for us, would like to discuss a new project or if you think you'd like to come and join the team &#8211; get in touch</p>
+        </div>
+        <div class="col-md-3 col-md-push-7">
+            <div class="subscription hidden-xs hidden-sm">
+                <h3>Join out mailing list</h3>
+                <p>If you don't want to message us but would like to join our mailing list please complete this form.</p>
+
+                <form action="" role="form" class="form-subscription">
+                    <div class="form-group">
+                        <label for="subscription-name" class="sr-only">Full Name</label>
+                        <input id="subscription-name" type="text" class="form-control" placeholder="Full Name*"/>
+                        <p class="help-text">{{error.name}}</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="subscription-email" class="sr-only">Email Address</label>
+                        <input id="subscription-email" type="text" class="form-control" placeholder="Email*"/>
+                        <p class="help-text">{{error.email}}</p>
+                    </div>
+                    <button type="submit" class="btn btn-lg btn-default btn-block">Just sign me up</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4 col-md-pull-1">
+            <form action="" role="form" class="form-correspondence">
+                <div class="form-group">
+                    <label for="correspondence-name" class="sr-only">Full Name</label>
+                    <input id="correspondence-name" type="text" class="form-control" placeholder="Full Name*"/>
+                    <p class="help-text">{{error.name}}</p>
+                </div>
+                <div class="form-group">
+                    <label for="correspondence-email" class="sr-only">Email Address</label>
+                    <input id="correspondence-email" type="text" class="form-control" placeholder="Email address*"/>
+                    <p class="help-text">{{error.email}}</p>
+                </div>
+                <div class="form-group">
+                    <label for="correspondence-company" class="sr-only">Company</label>
+                    <input id="correspondence-company" type="text" class="form-control" placeholder="Company"/>
+                    <p class="help-text">{{error.company}}</p>
+                </div>
+                <div class="form-group">
+                    <label for="correspondence-message" class="sr-only">Message</label>
+                    <textarea id="correspondence-message" class="form-control" placeholder="You message*"></textarea>
+                    <p class="help-text">{{error.message}}</p>
+                </div>
+                <div class="input-group">
+                      <span class="input-group-addon">
+                          <label for="correspondence-subscribe" class="sr-only">Mailing-List Participation</label>
+                          <input id="correspondence-subscribe" type="checkbox"/>
+                          Add me to the mailing list
+                      </span>
+                    <button type="submit" class="btn btn-lg pull-right">Send</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-3 col-md-offset-7">
+            <p class="text-right small indicates-notice">* indicates a required field</p>
+        </div>
+    </div>
+</div>

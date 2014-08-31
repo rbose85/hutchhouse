@@ -1,14 +1,22 @@
 (function () {
     'use strict';
 
-    function Controller($scope) {
+    function ContactUs($scope) {
         $scope.name = 'Potato';
+        $scope.error = {
+            name: undefined,
+            email: undefined,
+            company: undefined,
+            message: undefined
+        };
     }
 
     angular
-        .module('hutchhouseApp.controllers', [])
+        .module('hutchhouseApp.controllers', [
+            'ui.bootstrap'
+        ])
         .controller('ContactController', [
             '$scope',
-            Controller
+            ContactUs
         ]);
 })();

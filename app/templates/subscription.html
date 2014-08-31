@@ -2,17 +2,18 @@
     <h3>Join out mailing list</h3>
     <p>If you don't want to message us but would like to join our mailing list please complete this form.</p>
 
-    <form action="" role="form" class="form-subscription">
-        <div class="form-group">
-            <label for="subscription-name" class="sr-only">Full Name</label>
-            <input id="subscription-name" type="text" class="form-control" placeholder="Full Name*"/>
-            <p class="help-text">{{error.name}}</p>
+    <form name="subscribeForm" action="" role="form" class="form-subscription" ng-controller="SubscriptionController" novalidate>
+        <div class="form-group" show-errors>
+            <label for="subscription-name" class="sr-only control-label">Full Name</label>
+            <input id="subscription-name" type="text" class="form-control" name="name" ng-model="model.name" required placeholder="Full Name*"/>
+            <p class="help-block" ng-if="subscribeForm.name.$error.required">This is a required field.</p>
         </div>
-        <div class="form-group">
-            <label for="subscription-email" class="sr-only">Email Address</label>
-            <input id="subscription-email" type="text" class="form-control" placeholder="Email*"/>
-            <p class="help-text">{{error.email}}</p>
+        <div class="form-group" show-errors>
+            <label for="subscription-email" class="sr-only control-label">Email Address</label>
+            <input id="subscription-email" type="email" class="form-control" name="email" ng-model="model.email" required placeholder="Email*"/>
+            <p class="help-block" ng-if="subscribeForm.email.$error.required">This is a required field.</p>
+            <p class="help-block" ng-if="subscribeForm.email.$error.email">This is a malformed field.</p>
         </div>
-        <button type="submit" class="btn btn-lg btn-default btn-block">Just sign me up</button>
+        <button type="submit" class="btn btn-lg btn-default btn-block" ng-click="submit()">Just sign me up</button>
     </form>
 </div>

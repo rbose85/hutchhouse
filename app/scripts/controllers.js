@@ -28,6 +28,26 @@
         };
     }
 
+    function SubscribeForm($scope) {
+        $scope.submit = function () {
+            $scope.$broadcast('show-errors-check-validity');
+
+            if ($scope.subscribeForm.$valid) {
+                // todo: post to db
+                console.log('Validation passed -- form: ', $scope.subscribeForm);
+                $scope.reset();
+            }
+        };
+
+        $scope.reset = function () {
+            $scope.$broadcast('show-errors-reset');
+            $scope.model = {
+                name: '',
+                email: ''
+            };
+        };
+    }
+
     angular
         .module('hutchhouseApp.controllers', [
             'ui.bootstrap',
@@ -40,5 +60,9 @@
         .controller('CorrespondenceController', [
             '$scope',
             ContactForm
+        ])
+        .controller('SubscriptionController', [
+            '$scope',
+            SubscribeForm
         ]);
 })();

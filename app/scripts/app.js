@@ -11,7 +11,8 @@
 
     var components = [
         'hutchhouseApp.config',
-        'hutchhouseApp.controllers'
+        'hutchhouseApp.controllers',
+        'hutchhouseApp.services'
     ];
 
     function Router($routeProvider) {

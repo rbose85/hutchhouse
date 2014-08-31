@@ -5,7 +5,8 @@
         'ngCookies',
         'ngResource',
         'ngSanitize',
-        'ngRoute'
+        'ngRoute',
+        'firebase'
     ];
 
     var components = [

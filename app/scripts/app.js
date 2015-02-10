@@ -22,7 +22,7 @@
                 controller: 'ContactController'
             })
             .otherwise({
-                redirectTo: '/'
+                redirectTo: '/contact'
             });
     }
 

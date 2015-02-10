@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    var url = 'https://fiery-fire-2548.firebaseio.com/HutchHouse/';
+    var url = 'https://hutchhouse.firebaseio.com/';
 
     angular
         .module('hutchhouseApp.config', [])

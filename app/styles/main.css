@@ -12,22 +12,24 @@
 }
 
 body {
-    background: linear-gradient(-90deg, #ffffff 1px, transparent 1px),
-    linear-gradient(#ffffff 1px, transparent 1px),
-    linear-gradient(-90deg, #ffffff 2px, transparent 1px),
-    linear-gradient(#ffffff 2px, transparent 1px),
-    linear-gradient(transparent 3px, #eeeef2 3px, #eeeef2 78px, transparent 78px),
-    linear-gradient(-90deg, #aaa 1px, transparent 1px),
-    linear-gradient(-90deg, transparent 3px, #eeeef2 3px, #eeeef2 78px, transparent 78px),
-    linear-gradient(#aaa 1px, transparent 1px),
-    #eeeef2;
-    background-size: 10px 10px,
-    10px 10px,
-    50px 50px,
-    50px 50px,
-    50px 50px,
-    50px 50px,
-    50px 50px;
+    background:
+        linear-gradient(-90deg, #ffffff 1px, transparent 1px),
+        linear-gradient(#ffffff 1px, transparent 1px),
+        linear-gradient(-90deg, #ffffff 2px, transparent 1px),
+        linear-gradient(#ffffff 2px, transparent 1px),
+        linear-gradient(transparent 3px, #eeeef2 3px, #eeeef2 78px, transparent 78px),
+        linear-gradient(-90deg, #aaa 1px, transparent 1px),
+        linear-gradient(-90deg, transparent 3px, #eeeef2 3px, #eeeef2 78px, transparent 78px),
+        linear-gradient(#aaa 1px, transparent 1px),
+        #eeeef2;
+    background-size:
+        10px 10px,
+        10px 10px,
+        50px 50px,
+        50px 50px,
+        50px 50px,
+        50px 50px,
+        50px 50px;
 }
 
 body * {

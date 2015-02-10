@@ -5,6 +5,6 @@
 
     angular
         .module('hutchhouseApp.config', [])
-        .constant('VERSION', '0.1')
+        .constant('VERSION', '0.2')
         .constant('FBURL', url);
 })();
